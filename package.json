@@ -3,19 +3,26 @@
 	"name": "cortex-debug-dp-stm32f1",
 	"displayName": "Cortex-Debug: Device Support Pack - STM32F1",
 	"description": "This package contains additional support functionality (SVD definitions) for Cortex-Debug for STM32F1 devices",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.34.0"
 	},
 	"categories": [
-		"Other"
+		"Debuggers"
 	],
+	"keywords": [
+		"Cortex-Debug",
+		"Cortex-Debug Device Support Pack",
+        "cortex-m",
+        "gdb",
+        "debug",
+        "embedded"
+    ],
 	"activationEvents": [
 		"onDebugResolve:cortex-debug"
 	],
 	"main": "./out/extension.js",
-	"contributes": {
-	},
+	"contributes": {},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
